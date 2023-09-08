@@ -1,9 +1,6 @@
 package com.demowebshop.automattest;
 
 import fw.ApplicationManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.ITestResult;
@@ -13,7 +10,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import java.lang.reflect.Method;
-import java.time.Duration;
 import java.util.Arrays;
 
 public class TestBase {

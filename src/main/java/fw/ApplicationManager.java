@@ -10,11 +10,17 @@ public class ApplicationManager {
     BaseHelper baseHelper;
     RegisterUserHelper registerUserHelper;
 
+    LoginHelper loginHelper;
+
     public BaseHelper getBaseHelper() {
         return baseHelper;
     }
     public RegisterUserHelper getRegisterUserHelper() {
         return registerUserHelper;
+    }
+
+    public LoginHelper getLoginHelper() {
+        return loginHelper;
     }
 
     public void stop() {
@@ -29,6 +35,7 @@ public class ApplicationManager {
 
         baseHelper = new BaseHelper(driver);
         registerUserHelper = new RegisterUserHelper(driver);
+        loginHelper = new LoginHelper(driver);
 
     }
 }

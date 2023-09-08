@@ -9,8 +9,17 @@ public class BaseHelper {
         this.driver = driver;
     }
 
+    public final String STANDARD_USER = "standart@yandex.com";
+
+    public final String STANDARD_PASSWORD = "standart@yandex.com";
+
+
     public void clickOnElement (String cssSelector) {
         driver.findElement(By.cssSelector(cssSelector)).click();
+    }
+
+    public void redirectTo(String selectorUrl) {
+        clickOnElement(selectorUrl);
     }
 
     public void fillField(String text, String cssSelector) {

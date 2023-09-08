@@ -8,9 +8,7 @@ public class RegisterUserHelper extends BaseHelper {
         super(driver);
     }
 
-    public void redirectToPageRegister() {
-       clickOnElement(".ico-register");
-    }
+
 
     public void pickSexOfUser(Integer sex) {
         if (sex == 1) clickOnElement("#gender-male");

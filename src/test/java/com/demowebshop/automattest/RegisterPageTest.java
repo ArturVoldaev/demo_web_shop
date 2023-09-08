@@ -9,7 +9,7 @@ public class RegisterPageTest extends TestBase {
 
     @Test(dataProvider = "dataForNewUser", dataProviderClass = DataProviders.class)
     public void registerUser(Integer sex, String firstName, String lastName, String email, String password, String confirmPassword) {
-        app.getRegisterUserHelper().redirectToPageRegister();
+        app.getRegisterUserHelper().redirectTo(".ico-register");
         app.getRegisterUserHelper().pickSexOfUser(sex);
         app.getRegisterUserHelper().fillRegisterForm(new NewUser()
                 .setFirstName(firstName)
