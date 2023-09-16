@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test  name="loginUserXmlParams">
+        <parameter name="username"  value="sadhvisingh24@gmail.com" />
+        <parameter name="password"  value="XXXXX" />
+        <classes>
+            <class name="com.demowebshop.automattest.LoginPageTest"/>
+        </classes>
+
+    </test>
+</suite>

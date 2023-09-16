@@ -14,8 +14,9 @@ public class LoginHelper extends BaseHelper {
         fillField(newUser.getEmail(), "#Email");
         fillField(newUser.getPassword(), "#Password");
     }
-    public void loginWithStandartUser() {
-        login(new NewUser().setEmail(STANDARD_USER).setPassword(STANDARD_PASSWORD));
+
+    public void logInCabinet(String userName, String password) {
+        login(new NewUser().setEmail(userName).setPassword(password));
         clickOnElement("input[value='Log in']");
     }
 

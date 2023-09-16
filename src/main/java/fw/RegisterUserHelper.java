@@ -10,9 +10,9 @@ public class RegisterUserHelper extends BaseHelper {
 
 
 
-    public void pickSexOfUser(Integer sex) {
-        if (sex == 1) clickOnElement("#gender-male");
-        if (sex == 0) clickOnElement("#gender-female");
+    public void pickSexOfUser(Boolean sex) {
+        if (sex) clickOnElement("#gender-male");
+        if (!sex) clickOnElement("#gender-female");
     }
 
     public void fillRegisterForm(NewUser newUser) {
